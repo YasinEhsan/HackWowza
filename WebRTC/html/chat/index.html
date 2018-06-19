@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<html>
+	<head>
+		<script src="../js/jquery-3.1.0.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="webrtc-const.js"></script>
+		<script src="webrtc.js"></script>
+		<script src="webrtc-player.js"></script>
+		<style>
+		.div-section {margin-bottom: 8px;}
+		</style>
+	</head>
+
+	<body>
+		<div class="div-section"><img src="../img/wowza-logo.png" class="logo" height="80"/></div>
+		<input type="hidden" id="streamName" name="streamName" value="myStream"></input>
+		<div class="div-section">
+		<table>
+		<tr><td><strong>SDP URL</strong></td><td><input type="text" id="sdpURL" size="50" value=""/></td></tr>
+		<tr><td><strong>Application Name</strong></td><td><input type="text" id="applicationName" size="25" value=""/></td></tr>
+		<tr><td>&nbsp;</td><td><input type="button" id="buttonPublish" onclick="start()" value=""></input></td></tr>
+		</table>
+		</div>
+
+		<div id="videoContainer">
+			<video id="videoLOCALCAMERA" autoplay muted onloadeddata="dotest('LOCALCAMERA');" style="height:288px;margin:5px;display:none;background;pink;"></video>
+		</div>
+
+		<script type="text/javascript">
+			pageReady();
+		</script>
+
+		<div>
+			<span id="statusMessages"></span>
+		</div>
+	</body>
+</html>

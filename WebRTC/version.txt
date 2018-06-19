@@ -1,0 +1,74 @@
+version 21380
+  * Updated webrtc.js used for publishing to make Chrome use the correct profile
+
+version 21144
+  * Updated README.html to point to online tutorial for instructions
+
+version 20218
+  * Fixed incorrect parameter check in webrtc.js for publishing clients
+  * Updated README.html to include 0.0.0.0 in the webrtcUDPBindAddress property example
+
+version 19848
+  * Add Get Available Streams button to play/index.html page.
+  * Updated play/webrtc.js to support query of Wowza Streaming Engine WebRTC streams.
+
+version 19676
+
+* Added support for FrameRate option in SDP negotiation to resolve audio/video sync when transcoding
+  * Updated publish/index.html and added FrameRate option
+  * Updated publish/webrtc.js to support FrameRate option
+
+version 19649
+
+* Updated webrtc.js for publishing to enable bandwidth controls for Chrome correctly.
+
+version 19349
+
+* Updated readme.html
+  * Added example code line to show how to retrieve the query string use the server side API
+
+version 19242
+
+* Updated readme.html
+  * Added live repeater instructions
+  * Added additional API calls
+  * Clarified AAC support
+
+version 19214
+
+* Many updates to example HTML to support Wowza Streaming Engine 4.6
+* Updated Readme.html to support Wowza Streaming Engine 4.6
+* Added "How To..." section to readme
+* Added support for newer WebRTC API supported by Firefox
+
+version 18993
+
+* Improved WebRTC sample html to expose the common settings such as URL and application name
+
+version 18580
+
+* Updated readme to call out that TCP streaming port should not be SSL protected
+
+version 18501
+
+* Integrated WebRTC into core Wowza Streaming Engine code
+* Added HTTPProviderSimpleWebServer to core Wowza Streaming Engine for deliver of examples
+* Modified WebRTC to use StreamLock certificates (removed self-signed certificate)
+* Added support for VP9
+
+version 18490
+
+* Updated to be compatible with Wowza Streaming Engine 4.5.0
+
+version 17727
+
+* Added support for WebRTC VHost properties webrtcPreferredCodecsAudio and webrtcPreferredCodecsVideo to set preferred list of codecs for WebRTC (defaults are "opus,vorbis,aac,pcmu,pcma" and "vp8,h264")
+
+version 17589
+
+* Added support for WebRTC over TCP
+* Requires (requires 4.2.0.03 - development)
+
+version 15867
+
+* Initial release (requires 4.2.0.02)
