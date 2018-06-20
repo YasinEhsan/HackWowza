@@ -1,19 +1,84 @@
 <!DOCTYPE html>
-  <html>
+  <html class="black">
     <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>About</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+      <!-- google text fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+      <!-- fontawesome -->
+      <script src="https://use.fontawesome.com/9cabbed325.js"></script>
+      <!-- Materlize Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <style media="screen">
+        body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+          font-family: 'Montserrat', sans-serif;
+          margin: 0;
+        }
+        #logos{
+          padding-left: 2%;
+        }
+      </style>
     </head>
-
     <body>
+      <div class="wrapper">
+        <header>
+          <nav>
+            <div class="nav-wrapper grey darken-4">
+              <a href="#!" id="logos"  class="brand-logo"><i class="material-icons">cloud</i>Invia</a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
+                <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <div class="row">
+          <div class="col l9 s12 m7 ">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/movie.png">
+              </div>
+            </div>
+          </div>
+          <div class="col l3 s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/p1.jpg">
+                <span class="card-title">Carson</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/p2.jpeg">
+                <span class="card-title">Raj</span>
+              </div>
+            </div>
+          </div>
+          <div class="col l3 s12 m5">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/p3.jpg">
+                <span class="card-title">Hannah</span>
+              </div>
+            </div>
+          </div>
 
-
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <script type="text/javascript">
+          $(".button-collapse").sideNav();
+      </script>
     </body>
   </html>
