@@ -13,6 +13,14 @@
       <script src="https://use.fontawesome.com/9cabbed325.js"></script>
       <!-- Materlize Icons -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <meta charset="utf-8">
+      <meta content="stuff, to, help, search, engines, not" name="keywords">
+      <meta content="What this page is about." name="description">
+      <meta content="Display Webcam Stream" name="title">
+      <title>Display Webcam Stream</title>
+
+
       <style media="screen">
         body {
           display: flex;
@@ -24,6 +32,15 @@
         #logos{
           padding-left: 2%;
         }
+        #container {
+          margin: 0px auto;
+          margin-top: -7%;
+      }
+      #videoElement {
+          width: 300px;
+          height: 230px;
+          background-color: black ;
+      }
       </style>
     </head>
     <body>
@@ -42,20 +59,22 @@
           </nav>
         </header>
         <div class="row">
-          <div class="col l7 s12 m7 offset-l3">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/movie.png">
-              </div>
-            </div>
-          </div>
           <!-- <div class="col l3 s12 m7 offset-l1">
            <div class="card">
              <div class="card-image">
-               <img src="img/fb.png">
+               <img src="img/chat.png">
              </div>
            </div>
          </div> -->
+          <div class="col l7 s12 m7 offset-l3"> <!-- Offset l-0 with chat -->
+            <div class="card"> <!-- VIDEO GOes HERE -->
+              <div class="card-image">
+                <!-- <img src="img/movie.png"> -->
+                <embed src="https://www.youtube.com/embed/F9Bo89m2f6g" allowfullscreen="true" width="725" height="384">
+              </div>
+            </div>
+          </div>
+
              <div class="col l3 s12 m7 ">
               <div class="card">
                 <div class="card-image">
@@ -75,10 +94,15 @@
           <div class="col l3 s12 m5">
             <div class="card">
               <div class="card-image">
-                <img src="img/p2.png">
-                <span class="card-title">Raj</span>
+                <div id="container">
+                  <video autoplay="true" id="videoElement">
+
+                  </video>
+              </div>
+                <span class="card-title">You</span>
               </div>
             </div>
+
           </div>
           <div class="col l3 s12 m5">
             <div class="card">
@@ -95,5 +119,19 @@
       <script type="text/javascript">
           $(".button-collapse").sideNav();
       </script>
+      <script>
+      var video = document.querySelector("#videoElement");
+
+      if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({video: true})
+      .then(function(stream) {
+        video.srcObject = stream;
+      })
+      .catch(function(err0r) {
+        console.log("Something went wrong!");
+      });
+      }
+      </script>
+
     </body>
   </html>
