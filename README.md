@@ -1,10 +1,8 @@
 # HackWowza
 
-**Problem :** More connections, less connected?!
+**Problem :** We unwittingly commit huge time blocks within a week procastinating on infotainment, binging on netflix shows and cosuming youtube content.
 
-
-**Solution :** Remotely live stream with friends watching Netflix / Youtube / Anime.
-
+**Solution :** Our solution: prcastinate, but procastinate as a group. Literally "Netflix and chill.” How?! Watch movies / Tv shows / procastinate with your best buddies on live video.
 
 
 ### ScreenShot of Web App
